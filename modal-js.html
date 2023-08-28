@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal-js.css">
+
+    <title>SideBar</title>
+</head>
+
+<body onload="checkSize()">
+
+    <div class="navbar">
+        <span>Modal HTML, CSS y JS</span>
+        <div class="bars">
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+        </div>
+        <div class="flex"></div>
+        <div class="session" id="session"> <span>Usuario</span> <i class="fa fa-caret-down" aria-hidden="true" id="session"></i>
+        </div>
+    </div>
+
+    <div class="menu-session menu-session-hide">
+        <dl>
+            <dt class="link-session"> Mi Perfil </dt>
+            <hr style="padding: 0px;">
+            <dt class="link-session"> Cerrar Sesion</dt>
+        </dl>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h4> SideBar </h4>
+            <img src="image/vesil.png" width="40">
+        </div>
+        <div class="sidebar-scroll">
+            <div class="sidebar-content" style="margin-top: 15px">
+                <div class="nav-link">
+                    <a href="index.html" class="link">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="modal.html" class="link">Modal CSS y HTML</a>
+                </div>
+                <div class="nav-link">
+                    <a href="modal-js.html" class="link link-select">Modal CSS, HTML y JS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1> Ventana Modal </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque maiores mollitia explicabo, possimus dolorum vero impedit voluptatem? Facere asperiores corporis eum iure praesentium, fuga sapiente earum illum quos voluptas quia incidunt, dolor suscipit id voluptatum, impedit accusantium veniam excepturi reiciendis? Numquam vero ipsam, alias praesentium sint, cumque facilis quasi qui quas obcaecati consequatur eaque? Cumque pariatur asperiores eum, corporis, ex nemo illum iure aperiam labore voluptates iste, veniam cum? Vero at dolorum repudiandae sunt ex, natus odio. Quis eligendi necessitatibus ex asperiores quod, distinctio quibusdam pariatur velit, a fuga quas, expedita repellat aliquid sit natus similique? Officia rem ab error? Nobis iusto placeat officia necessitatibus recusandae, modi ratione veritatis minus, quasi incidunt quidem reiciendis provident maxime nihil sit debitis officiis sint? Ducimus perferendis, natus consequuntur ipsum impedit eaque nemo, aliquid omnis, assumenda beatae eos unde dolorem dolores alias. Dolorum, ullam dicta. Architecto a mollitia nihil amet delectus? Alias esse corporis, nobis vel molestiae aut ullam sequi accusantium et praesentium aliquam incidunt tenetur facilis eius. Ullam et facere earum laudantium minus quisquam reprehenderit libero odit quod quidem, deserunt suscipit ipsam? Molestias labore ut facere ad ducimus accusamus dolore numquam saepe doloremque enim voluptatibus aperiam quae qui ex, porro, provident at quam vel iure corporis adipisci. Facere dolore, ratione id quam, quisquam deserunt voluptatum soluta necessitatibus, eos voluptate iste cupiditate aliquid earum vitae quibusdam sapiente error accusamus doloremque quis aspernatur facilis. </p>
+        <!-- <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, sapiente ut veniam molestias qui
+            explicabo! Temporibus impedit porro repudiandae nobis, voluptates nam placeat quam sequi voluptas soluta
+            velit modi. Commodi?</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, sapiente ut veniam molestias qui
+            explicabo! Temporibus impedit porro repudiandae nobis, voluptates nam placeat quam sequi voluptas soluta
+            velit modi. Commodi?</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, sapiente ut veniam molestias qui
+            explicabo! Temporibus impedit porro repudiandae nobis, voluptates nam placeat quam sequi voluptas soluta
+            velit modi. Commodi?</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, sapiente ut veniam molestias qui
+            explicabo! Temporibus impedit porro repudiandae nobis, voluptates nam placeat quam sequi voluptas soluta
+            velit modi. Commodi?</p> -->
+
+        <button class="btn btn-primary" id="open-modal" style="margin-top: 10px;">
+            Abrir Modal
+        </button>
+        <dialog id="modal">
+            <h2>Hola, soy un Modal </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione necessitatibus iure quidem magni eos
+                et, repellat nam velit quod corrupti. Dolorem quia debitis doloremque voluptatem assumenda
+                laboriosam voluptas recusandae a.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione necessitatibus iure quidem magni eos
+                et, repellat nam velit quod corrupti. Dolorem quia debitis doloremque voluptatem assumenda
+                laboriosam voluptas recusandae a.</p>
+            <button class="btn btn-primary" id="close-modal" style="margin-top: 10px;">
+                Close Modal
+                </buttom>
+
+        </dialog>
+    </div>
+
+    <script src="./functions.js">
+    </script>
+    <script src="./modal-js.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal-css.css">
+
+    <title>SideBar</title>
+</head>
+
+<body onload="checkSize()">
+
+    <div class="navbar">
+        <span>Modal HTML y CSS</span>
+        <div class="bars">
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+        </div>
+        <div class="flex"></div>
+        <div class="session" id="session"> <span>Usuario</span> <i class="fa fa-caret-down" aria-hidden="true"
+                id="session"></i>
+        </div>
+    </div>
+
+    <div class="menu-session menu-session-hide">
+        <dl>
+            <dt class="link-session"> Mi Perfil </dt>
+            <hr style="padding: 0px;">
+            <dt class="link-session"> Cerrar Sesion</dt>
+        </dl>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h4> SideBar </h4>
+            <img src="image/vesil.png" width="40">
+        </div>
+        <div class="sidebar-scroll">
+            <div class="sidebar-content" style="margin-top: 15px">
+                <div class="nav-link">
+                    <a href="index.html" class="link">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="modal.html" class="link link-select">Modal CSS y HTML</a>
+                </div>
+                <div class="nav-link">
+                    <a href="modal-js.html" class="link ">Modal CSS, HTML y JS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="boton-modal">
+            <label for="btn-modal" class="btn btn-primary">
+                Abrir Modal
+            </label>
+        </div>
+        <!--Fin de Boton-->
+        <!--Ventana Modal-->
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal-xl">
+                <h2>¡Bienvenido!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                    nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                    nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!
+
+                </p>
+                <div style="margin-top: 25px; text-align: center;">
+                    <label for="btn-modal" class="btn btn-primary">Cerrar</label>
+                </div>
+            </div>
+            <!-- <label for="btn-modal" class="cerrar-modal"></label> -->
+        </div>
+
+    </div>
+
+    <script src="./functions.js">
+    </script>
+
+</body>
+
+</html>

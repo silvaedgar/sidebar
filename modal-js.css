@@ -1,0 +1,19 @@
+#modal::backdrop {
+    background-color: rgba(150, 150, 150, .85);
+}
+
+#modal {
+    align-self: center;
+    max-width: 50%;
+    margin: calc(50vh / 2) auto;
+    border: 0px solid white;
+    padding: 20px 5px 5px 15px;
+    box-shadow: 5px 0px 15px 2px rgba(100, 100, 100, 0.8);
+}
+
+/* .container-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
